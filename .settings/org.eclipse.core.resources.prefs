@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//com/fourier/moviespy/Dao/DBHelper.py=utf-8
+encoding//com/fourier/moviespy/Entity/CinemaInfo.py=utf-8
+encoding//com/fourier/moviespy/Entity/MetaInfo.py=utf-8
+encoding//com/fourier/moviespy/Entity/MovieInfo.py=utf-8
+encoding//com/fourier/moviespy/Spy/MeituanSpy.py=utf-8
