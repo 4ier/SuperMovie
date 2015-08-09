@@ -16,7 +16,8 @@ class CinemaInfo(MetaInfo):
     );
     '''
     table_fields_dict = {'CinemaID':'', 'CinemaName':'', 'Location':'',
-                          'Logo':'', 'Description':'', 'CityID':'', 'City':''}
+                         'Logo':'', 'Description':'', 'CityID':'', 'City':''}
+    table_name = 'cinema_info'
         
     def __init__(self, cinema_name, location, logo, desc, city=u'深圳'):
         self.table_fields_dict['CinemaID'] = uuid.uuid3(uuid.NAMESPACE_DNS, cinema_name)

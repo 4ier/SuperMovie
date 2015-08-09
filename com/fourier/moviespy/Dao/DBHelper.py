@@ -13,9 +13,8 @@ class DBHelper:
     def __init__(self):
         pass
 
-    def insertMovieInfo(self, movie_info):
+    def insertMovieInfo(self, table_name, meta_info):
+        'INSERT INRO ' + table_name + meta_info.table_fields_dict.keys() + meta_info.table_fields_dict.values()
         cu = con.cursor()
-        cu.execute("""REPLACE INTO movie_info (MovieID, MovieName, Poster, Description, Released) VALUES (?,?,?,?,?)""",
-                   (str(movie_info.id), movie_info.name, movie_info.poster, None, None))
+        cu.execute(table_name % meta_info.table_fields_dict.keys() % meta_info.table_fields_dict.values())
         con.commit()
-

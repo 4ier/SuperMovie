@@ -19,6 +19,7 @@ class MovieInfo(MetaInfo):
     '''
     table_fields_dict = {'MovieID':'', 'MovieName':'', 'Poster':'',
                          'Description':'', 'Released':''}
+    table_name = 'movie_info'
     
     def __init__(self, movie_name, poster):
         self.table_fields_dict['MovieID'] = uuid.uuid3(uuid.NAMESPACE_DNS, movie_name)
